@@ -1,5 +1,6 @@
 const app = require('express')();
 const http = require('http').Server(app);
+const path = require('path');
 const io = require('socket.io')(http);
 
 app.get('/', (req, res) => {
